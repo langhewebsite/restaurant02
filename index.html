@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="home">
+        <p>𝕮𝖔𝖋𝖋𝖊𝖊</p>
+    </section>
+    <section class="main">
+        <div class="home-coffee">
+            <p class="cf">Cᴏғғᴇᴇ☕︎</p>
+            <button class="footer-open">≈</button>
+        </div>
+        <hr class="main-hr1">
+        <div class="coffee-options">
+            <div class="option1 active-option" data-id="cw" onclick="goTab(this, 'cw')">
+                <div class="option1-img">
+                    <img class="option-1-img" src="cold-white1.png">
+                </div>
+                <div class="option1-text">
+                    <p>cold_white</p>
+                </div>
+            </div>
+            <div class="option1" data-id="cb" onclick="goTab(this, 'cb')">
+                <div class="option2-img">
+                    <img class="option-2-img" src="cold-black1.png">
+                </div>
+                <div class="option2-text">
+                    <p>cold_black</p>
+                </div>
+            </div>
+            <div class="option1" data-id="hw" onclick="goTab(this, 'hw')">
+                <div class="option3-img">
+                    <img class="option-2-img" src="hot-white1.png">
+                </div>
+                <div class="option3-text">
+                    <p>hot_white</p>
+                </div>
+            </div>
+            <div class="option1" data-id="hb" onclick="goTab(this, 'hb')">
+                <div class="option4-img">
+                    <img class="option-2-img" src="hot-black1.png">
+                </div>
+                <div class="option4-text">
+                    <p>hot_black</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="slider" id="slide-cont">
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="cup.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name"><b>𝓬𝓸𝓯𝓯𝓮𝓮</b></h1>
+                    <p class="p1">✰ 5.0</p>
+                    <p class="p2">𝒢𝑜𝑜𝒹 𝓂ℴ𝓇𝓃𝒾𝓃ℊ</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like1" >♡</button>
+                    <p class="p2">☕︎☕︎☕︎☕︎</p>
+                </div>
+                <div class="info3">
+                    <!-- <button> > </button> -->
+                </div>
+            </div>
+            <div class="slide category-start" id="cw" data-cat="cw">
+                <div class="coffee-img">
+                    <img class="img" src="cold-white1.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Macchiato Cortado</h1>
+                    <p class="p1">✰ 4.0</p>
+                    <p class="p2">volume 90ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like2" >♡</button>
+                    <p class="p2" id="price">₹ 150/-</p>
+
+                </div>
+                <div class="info2 5"></div>
+                <div class="info3">
+                    <button id="cd1o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="cold-white2.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Affogato</h1>
+                    <p class="p1">✰ 4.0</p>
+                    <p class="p2">volume 120ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like3" >♡</button>
+                    <p class="p2">₹ 110/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd2o"> > </button>
+                </div>
+            </div>
+            
+            <div class="slide category-start" id="cb" data-cat="cb">
+                <div class="coffee-img">
+                    <img class="img" src="cold-black1.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Ristretto</h1>
+                    <p class="p1">✰ 4.1</p>
+                    <p class="p2">volume 100ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like4">♡</button>
+                    <p class="p2">₹ 120/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd3o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="cold-black2.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Flat White</h1>
+                    <p class="p1">✰ 5.0</p>
+                    <p class="p2">volume 90ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like5">♡</button>
+                    <p class="p2">₹ 250/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd4o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="cold-black3.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Nitro Cold Brew</h1>
+                    <p class="p1">✰ 4.2</p>
+                    <p class="p2">volume 130ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like6">♡</button>
+                    <p class="p2">₹ 150/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd5o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="cold-black4.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Frappe</h1>
+                    <p class="p1">✰ 4.0</p>
+                    <p class="p2">volume 110ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like7">♡</button>
+                    <p class="p2">₹ 120/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd6o"> > </button>
+                </div>
+            </div>
+            <div class="slide category-start" id="hw" data-cat="hw">
+                <div class="coffee-img">
+                    <img class="img" src="hot-white1.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Americano</h1>
+                    <p class="p1">✰ 4.9</p>
+                    <p class="p2">volume 100ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like8">♡</button>
+                    <p class="p2">₹ 140/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd7o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="hot-white2.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Latte</h1>
+                    <p class="p1">✰ 4.3</p>
+                    <p class="p2">volume 140ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like9">♡</button>
+                    <p class="p2">₹ 150/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd8o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="hot-white3.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Ice Americano</h1>
+                    <p class="p1">✰ 4.0</p>
+                    <p class="p2">volume 120ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like10">♡</button>
+                    <p class="p2">₹ 130/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd9o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="hot-white4.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Ice Mocha</h1>
+                    <p class="p1">✰ 4.0</p>
+                    <p class="p2">volume 160ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like11">♡</button>
+                    <p class="p2">₹ 150/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd10o"> > </button>
+                </div>
+            </div>
+            <div class="slide category-start" id="hb" data-cat="hb">
+                <div class="coffee-img">
+                    <img class="img" src="hot-black1.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Espresso</h1>
+                    <p class="p1">✰ 4.7</p>
+                    <p class="p2">volume 140ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like12">♡</button>
+                    <p class="p2">₹ 160/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd11o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="hot-black2.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Cappuccino</h1>
+                    <p class="p1">✰ 4.4</p>
+                    <p class="p2">volume 110ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like13">♡</button>
+                    <p class="p2">₹ 150/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd12o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="hot-black3.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Cold Brew</h1>
+                    <p class="p1">✰ 4.0</p>
+                    <p class="p2">volume 100ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like14">♡</button>
+                    <p class="p2">₹ 140/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd13o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="hot-black4.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name">Iced Latte</h1>
+                    <p class="p1">✰ 4.2</p>
+                    <p class="p2">volume 160ml</p>
+
+                </div>
+                <div class="info2">
+                    <button id="like15" >♡</button>
+                    <p class="p2">₹ 150/-</p>
+                </div>
+                <div class="info3">
+                    <button id="cd14o"> > </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="coffee-img">
+                    <img class="img" src="cup.png">
+                </div>
+                <div class="info1">
+                    <h1 class="coffee-name"><b>𝔱𝔥𝔞𝔫𝔨 𝔶𝔬𝔲</b></h1>
+                    <p class="p1"> ☕︎ ☕︎ ☕︎</p>
+                    <p class="p2">𝓖𝓸𝓸𝓭𝓫𝔂𝓮 </p>
+
+                </div>
+                <div class="info2">
+                    <button id="like16">♡</button>
+                    <p class="p2">coffee</p>
+                </div>
+                <div class="info3">
+                    <!-- <button> > </button> -->
+                </div>
+            </div>
+            
+        </div>
+        <hr class="main-hr2">
+        <div class="search-container">
+            <form action="" class="search-bar">
+                <input type="text" placeholder="coffee" name="q" class="input" id="input-box" autocomplete="off">
+                <button type="submit" class="search-button">🔍︎</button>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="owner-info">
+            <div class="owner-img">
+                <img src="owner.png">
+            </div>
+            <h1>Mr. Jay Langhe</h1>
+        </div>
+        <hr class="line">
+        <h3>📞 +91 80********</h3>
+        <hr class="line">
+        <h3>✉ coffee99@gmail.com</h3>
+        <hr class="line">
+        <h3>𝕏 @coffee99</h3>
+        <hr class="line">
+        <h3>ⓕ coffee99</h3>
+        <hr class="line">
+        <h3>[in] coffee_80</h3>
+        <button class="footer-close">
+            <
+        </button>
+    </section>
+    <section class="card-show">
+        <div class="macchiato-cortado">
+            <div class="upper">
+                <img src="cold-white1.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Macchiato Cortado</h1>
+                    <p>✰ 4.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 150/-</h2>
+                    <h5>Volume 90ml</h5>
+                    <button id="cd1c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="affogato">
+            <div class="upper">
+                <img src="cold-white2.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Affogato</h1>
+                    <p>✰ 4.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 110/-</h2>
+                    <h5>Volume 120ml</h5>
+                    <button id="cd2c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="ristretto">
+            <div class="upper">
+                <img src="cold-black1.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Ristretto</h1>
+                    <p>✰ 4.1</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 120/-</h2>
+                    <h5>Volume 100ml</h5>
+                    <button id="cd3c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="flat-white">
+            <div class="upper">
+                <img src="cold-black2.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Flat White</h1>
+                    <p>✰ 5.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 250/-</h2>
+                    <h5>Volume 90ml</h5>
+                    <button id="cd4c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="nitro-cold-brew">
+            <div class="upper">
+                <img src="cold-black3.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Nitro Cold Brew</h1>
+                    <p>✰ 4.2</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 150/-</h2>
+                    <h5>Volume 130ml</h5>
+                    <button id="cd5c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="frappe">
+            <div class="upper">
+                <img src="cold-black4.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Frappe</h1>
+                    <p>✰ 4.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 120/-</h2>
+                    <h5>Volume 110ml</h5>
+                    <button id="cd6c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="americano">
+            <div class="upper">
+                <img src="hot-white1.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Americano</h1>
+                    <p>✰ 4.9</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 140/-</h2>
+                    <h5>Volume 100ml</h5>
+                    <button id="cd7c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="latte">
+            <div class="upper">
+                <img src="hot-white2.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Latte</h1>
+                    <p>✰ 4.3</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 150/-</h2>
+                    <h5>Volume 140ml</h5>
+                    <button id="cd8c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="ice-americano">
+            <div class="upper">
+                <img src="hot-white3.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Ice Americano</h1>
+                    <p>✰ 4.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 130/-</h2>
+                    <h5>Volume 120ml</h5>
+                    <button id="cd9c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="ice-mocha">
+            <div class="upper">
+                <img src="hot-white4.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Ice Mocha</h1>
+                    <p>✰ 4.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 150/-</h2>
+                    <h5>Volume 160ml</h5>
+                    <button id="cd10c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="espresso">
+            <div class="upper">
+                <img src="hot-black1.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Espresso</h1>
+                    <p>✰ 4.7</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 160/-</h2>
+                    <h5>Volume 140ml</h5>
+                    <button id="cd11c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="cappuccino">
+            <div class="upper">
+                <img src="hot-black2.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Cappuccino</h1>
+                    <p>✰ 4.4</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 150/-</h2>
+                    <h5>Volume 110ml</h5>
+                    <button id="cd12c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="cold-brew">
+            <div class="upper">
+                <img src="hot-black3.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Cold Brew</h1>
+                    <p>✰ 4.0</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 140/-</h2>
+                    <h5>Volume 100ml</h5>
+                    <button id="cd13c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="iced-latte">
+            <div class="upper">
+                <img src="hot-black4.png" alt="hot-black1.png" class="show-img">
+                <div class="upper1">
+
+                </div>
+                <div class="upper2">
+                    <h1>Iced Latte</h1>
+                    <p>✰ 4.2</p>
+
+                </div>
+
+            </div>
+            <hr class="show-hr">
+            <div class="lower">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, a mollitia! Sapiente nisi laudantium error accusantium, explicabo vero dignissimos nemo a fugit est impedit, eius veniam beatae maxime accusamus, numquam maiores! Earum laudantium iure exercitationem. Tempora reiciendis rem atque non, dolorum eius aliquid laborum autem?
+                </p>
+                <div>
+                    <h2>₹ 150/-</h2>
+                    <h5>Volume 160ml</h5>
+                    <button id="cd14c"> < </button>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+    
+<script src="script.js"></script>
+</body>
+</html>

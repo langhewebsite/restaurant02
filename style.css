@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family:arial;
+}
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+
+@media screen and (max-width:600px){
+
+    .home{
+        background-color: #210f00;
+        width:100%;
+        height:100vh;
+        position:fixed;
+        top:0px;
+        left:0px;
+        align-content: center;
+        text-align:center;
+        display:block;
+    }
+    .home p{
+        color:#e2d8d0;
+        font-size:44px;
+    }
+    .main{
+        position:fixed;
+        display:none;
+        background:white;
+        position:fixed;
+        height:100vh;
+        width:100%;
+        top:0px;
+        left:0px;
+    }
+    .yes-main{
+        display:block;
+    }
+    .main .home-coffee{
+        display:flex;
+        justify-content:space-between;
+        padding:0px 14px;
+        margin-bottom:8px;
+        margin-top:8px;
+    }
+    .main .home-coffee p{
+        font-size:32px;
+    }
+    .main .home-coffee button{
+        font-size:22px;
+        font-weight:bold;
+        background: #361b04;
+        min-width:30px;
+        max-height:30px;
+        border:none;
+        border-radius:4px;
+        color:#fcfbfa;
+    }
+    .main .coffee-options{
+        display:flex;
+        gap:29px;
+        overflow-x:auto;
+        padding:4px 14px;
+        scrollbar-width:none;
+    }
+    .main .coffee-options .option1{
+        display:flex;
+        gap:4px;
+        border:1px solid #210f00;
+        border-radius:20px;
+        padding:3px 4px;
+        align-items:center;
+    }
+    .main .coffee-options .option1.active-option{
+        background:#d39664;
+        border:2px solid rgb(36, 15, 1);
+    }
+    .option1-img, .option2-img, .option3-img, .option4-img{
+        height:34px;
+        width:34px;
+        display:inline-block;
+    }
+    .option-1-img, .option-2-img, .option-3-img, .option-4-img{
+        border-radius:50%;
+    }
+    .option1-text, .option2-text, .option3-text, .option4-text{
+        display:inline-block;
+        color:#210f00;
+        font-weight:bold;
+    }
+    .main .slider{
+        display: flex;
+        overflow-x:auto;
+        height:60vh;
+        width:100%;
+        background:transparent;
+        gap:29px;
+        scroll-snap-type:x mandatory;
+        padding:50px 10px 10px 60px;
+        /* padding-left:max(100px); */
+        scroll-behavior:smooth;
+        scrollbar-width:none;
+        -webkit-overflow-scrolling:touch;
+    }
+    .main .slider .slide{
+        height:350px;
+        background:#210f00;
+        min-width:200px;
+        border-radius:30px;
+        position:relative;
+        transform:scale(0.85);
+        transition:transform 0.3s ease, opacity 0.3s ease;
+        opacity:0.6;
+        scroll-snap-align:center;
+        flex:0 0 auto;
+        transition:border 0.3s ease;
+        color:white;
+    }
+    .main .slide.active{
+        transform:scale(1.1);
+        opacity:1;
+    }
+    .main .slider .slide .coffee-img{
+        height:120px;
+        width:120px;
+        position:absolute;
+        left:40px;
+        top:-24px;
+    }
+    .coffee-name{
+        padding-right:10px;
+    }
+    .main .slider .slide .coffee-img .img{
+        border-radius:50%;
+    }
+    .main .slider .slide .info1{
+        margin-top:120px;
+        margin-left:12px;
+        display:flex;
+        flex-direction:column;
+        gap:14px;
+    }
+    .main .slider .slide .info1 .p1{
+        max-width:50px;
+        border:1px solid rgb(37, 18, 9);
+        padding:2px 10px;
+        border-radius:20px;
+        color:#faf8f6;
+        background-color:#6d4626;
+    }
+    .main .slider .slide .info2{
+        display:flex;
+        justify-content:space-between;
+        padding:2px 14px 12px 0px;
+        margin-left:12px;
+        margin-top:20px;
+        font-size:24px;
+        align-content:center;
+    }
+     #like1, #like2, #like3, #like4, #like5, #like6, #like7, #like8, #like9, #like10, #like11, #like12, #like13, #like14, #like15, #like16{
+        color:rgb(0, 0, 0);
+        font-size:22px;
+        border-color:transparent;
+        padding:0 6px;
+        border-radius:50%;
+        background-color:white;
+        font-weight:bold;
+     }
+    .like-y{
+        background-color:#ff0040 !important; 
+    }
+    .main .slider .slide .info3{
+        text-align:end;
+        padding-right:14px;
+        margin-top:4px;
+    }
+    .main .slider .slide .info3 button{
+        font-size:22px;
+        padding:0 6px;
+        border-radius:10px;
+        border-color:white;
+        color:rgb(27, 14, 3);
+        background:#fdfcfb;
+    }
+    .main-hr1{
+        margin-bottom:6px;
+    }
+    .macchiato-cortado, .affogato, .ristretto, .flat-white, .nitro-cold-brew, .frappe, .americano, .latte, .ice-americano, .ice-mocha, .espresso, .cappuccino, .cold-brew, .iced-latte{
+        display:none;
+        position:fixed;
+        height:100vh;
+        width:100%;
+        background: #ffffff;
+        color:#1a0c00;
+    }
+    .yes-card-show{
+        display:block;
+    }
+    .card-show h1{
+        font-family: "Arizonia", cursive;
+        font-size:40px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .upper{
+        height:65vh;
+        width:100%;
+        background: #fffefe;
+        position:relative; 
+    }
+    .upper1{
+        height:35vh;
+        top:0px;
+        left:0px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background: #3b140e;
+    }
+    .upper2{
+        max-height:30vh;
+        display:flex;
+        justify-content:space-between;
+        padding-left:12px;
+        padding-right:20px;
+        padding-top:130px;
+    }
+    .upper2 p{
+        background: #b9a07a;
+        max-height:20px;
+        width:45px;
+        border-radius:10px;
+        padding:3px;
+    }
+    .show-img{
+        object-fit:cover;
+        height:70%;
+        width:60%;
+        position:absolute;
+        border-radius:50%;
+        top:7vh;
+        left:20%;
+    }
+    .show-hr{
+        height:2px;
+        color:#210f00;
+        background:#8f613c;
+    }
+    .lower{
+        padding:24px;
+        height:35vh;
+    }
+    .lower div{
+        margin-top:14px;
+        display:flex;
+        justify-content:space-between;
+    }
+    .lower div button{
+        width:24px;
+        background:#210f00;
+        color:white;
+        border:none;
+        font-weight:bold;
+        border-radius:40%;
+    }
+    .lower h5{
+        text-decoration:underline;
+    }
+    .lower p{
+        font-style: italic;
+    }
+    .search-container{
+        display:flex;
+        padding-top:max(12px);
+        justify-content:center;
+    }
+    .search-bar{
+        border-radius:20px;
+        max-width:90%;
+        padding:4px 9px 4px 14px;
+        background:#210f00;
+    }
+    .input{
+        font-size:19px;
+        padding-left:4px;
+        border:none;
+        background: transparent;
+        color:#faf8f7;
+    }
+    .search-button{
+        padding:2px 4px;
+        border-radius:19px;
+        text-align:center;
+         align-content:center;
+        color:#fcfaf9;
+        background:#210f00;
+        border-color:transparent;
+        font-size:18px;
+    }
+    .search-input:focus{
+        outline:#ece9e5;
+        border:1px solid whits;
+        border-radius:12px;
+    }
+    input:focus{
+        outline:#ece9e5;
+        border-color:transparent;
+    }
+    ::placeholder{
+        color:white;
+    }
+    .footer{
+        position:fixed;
+        background: #000;
+        color:white;
+        height:100vh;
+        width:100%;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        gap:16px;
+        visibility:hidden;
+    }
+    .yes-footer{
+        visibility:visible;
+    }
+    .owner-info{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        gap:14px;
+    }
+    .owner-img{
+        max-height:45px;
+        max-width:45px;
+    }
+    .owner-img img{
+        border-radius:50%;
+    }
+    .line{
+        width:60%;
+        margin:10px auto;
+        color:#8d7562
+    }
+    .footer-close{
+        font-size:22px;
+        min-width:34px;
+        position:absolute;
+        top:14px;
+        right:14px;
+        font-weight:bold;
+    }
+    
+
+
+}
