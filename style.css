@@ -208,13 +208,13 @@ img{
         font-style: normal;
     }
     .upper{
-        height:65vh;
+        /* height:65vh; */
         width:100%;
         background: #fffefe;
         position:relative; 
     }
     .upper1{
-        height:35vh;
+        height:25vh;
         top:0px;
         left:0px;
         border-bottom-left-radius: 50%;
@@ -222,7 +222,7 @@ img{
         background: #3b140e;
     }
     .upper2{
-        max-height:30vh;
+        max-height:10vh;
         display:flex;
         justify-content:space-between;
         padding-left:12px;
@@ -238,12 +238,13 @@ img{
     }
     .show-img{
         object-fit:cover;
-        height:70%;
-        width:60%;
+        height:275px;
+        width:300px;
         position:absolute;
         border-radius:50%;
-        top:7vh;
-        left:20%;
+        top:50px;
+        left:50%;
+        transform:translateX(-50%);
     }
     .show-hr{
         height:2px;
